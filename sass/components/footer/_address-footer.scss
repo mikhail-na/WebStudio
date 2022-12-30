@@ -1,0 +1,43 @@
+.page-footer__address {
+    font-style: normal;
+    
+    
+
+    // @media screen and (min-width:768px) {
+    //     margin-left: 76px;
+    // }
+   
+}
+
+.address__list {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1200px) {
+        display: block;
+    }
+    
+    & li+li {
+        display: block;
+        margin-top: 12px;
+    }
+
+}
+
+.address__link {
+    color: var(--link-contact-color);
+    text-decoration-line: none;
+    font-weight: 500;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

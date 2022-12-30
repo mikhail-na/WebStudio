@@ -1,0 +1,38 @@
+.work{
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
+}
+.work__title {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-list__item {
+    width: 370px;
+}
+
+.work-list__thumb {
+    position: relative;
+}
+
+.work-list__img--text {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    color: var(--primary-white-color);
+    background-color: var(--work-list-bg-color);
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

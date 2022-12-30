@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portfolio</title>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+               integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+               crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+     <!-- Навігіція -->
+     <header class="page-header">
+          <div class="menu__container container">
+               <a href="./index.html" rel="noopener noreferer" class="page-header__logo"> <span
+                         class="logo__accent--color">Web</span>Studio</a>
+               <button type="button" class="menu-toggle menu js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg width="40" height="40" class="menu-button__svg" aria-label="Перемикач мобільного меню">
+                         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+               </button>
+               <nav class="menu__navigation">
+                    <ul class="menu-list list">
+                         <li class="menu-list__item"><a class="menu-list__link" href="./index.html"
+                                   rel="noopener noreferer">Студія</a></li>
+                         <li class="menu-list__item"><a class="menu-list__link current" href="./portfolio.html">Портфоліо</a></li>
+                         <li class="menu-list__item"><a class="menu-list__link" href="">Контакти</a></li>
+                    </ul>
+                    </nav>
+                    <div class="contacts-container">
+                         <ul class="menu-contact__list">
+                              <li class="menu-contact__item">
+                                   <a href="mailto:info@devstudio.com" class="menu-contact__link link">
+                                        <svg class="menu-contact__envelope">
+                                             <use href="./images/icons.svg#icon-envelope"></use>
+                                        </svg>
+                                        info@devstudio.com</a>
+                              </li>
+                         
+                              <li class="menu-contact__item">
+                                   <a href="tel:+380961111111" class="menu-contact__link link">
+                                        <svg class="menu-contact__smartphone">
+                                             <use href="./images/icons.svg#icon-smartphone"></use>
+                                        </svg>
+                                        +38 096 111 11 11</a>
+                              </li>
+                         </ul>
+                    </div>
+          </div>
+     
+          <div class="mobile-menu js-menu-container" id="mobile-menu">
+     
+               <button type="button" class="menu-toggle cross js-close-menu">
+                    <svg width="40" height="40" class="menu-button__svg" aria-label="Перемикач мобільного меню">
+                         <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+               </button>
+               <div class="mobile-menu__container">
+                    <div class="mobile-menu__top">
+                         <ul class="mobile-menu__list list">
+                              <li class="mobile-menu__item"><a class="mobile-menu__link" href="./index.html"
+                                        rel="noopener noreferer">Студія</a></li>
+                              <li class="mobile-menu__item"><a class="mobile-menu__link current"
+                                        href="./portfolio.html">Портфоліо</a></li>
+                              <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Контакти</a></li>
+                         </ul>
+                    </div>
+                    <div class="mobile-menu__bottom">
+                         <ul class="mobile-menu__list--contact list">
+                              <li>
+                                   <a href="tel:+380961111111" class="mobile-menu__link--smartphone link">+38 096 111 11
+                                        11</a>
+                              </li>
+     
+                              <li>
+                                   <a href="mailto:info@devstudio.com"
+                                        class="mobile-menu__link--envelope link">info@devstudio.com</a>
+                              </li>
+                         </ul>
+                         <ul class="mobile-menu__list--social list">
+                              <li class="mobile-menu__item--social">
+                                   <a href="#" class="mobile-menu__link--social">Instagram</a>
+                              </li>
+                              <li class="mobile-menu__item--social">
+                                   <a href="#" class="mobile-menu__link--social">Twitwer</a>
+                              </li>
+                              <li class="mobile-menu__item--social">
+                                   <a href="#" class="mobile-menu__link--social">Facebook</a>
+                              </li>
+                              <li class="mobile-menu__item--social">
+                                   <a href="#" class="mobile-menu__link--social">LinkedIn</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </header>
+     <!-- Головне -->
+     <main>
+<section class="section">
+<div class="gallery__container container">
+     <h1 class="section__title visually-hidden">Заговок-секція</h1>
+     <ul class="gallery-btn__list list">
+          <li class="gallery-btn__item"><button type="button" class="gallery-btn__filter">Усі</button></li>
+          <li class="gallery-btn__item"><button type="button" class="gallery-btn__filter">Веб-сайти</button></li>
+          <li class="gallery-btn__item"><button type="button" class="gallery-btn__filter">Додатки</button></li>
+          <li class="gallery-btn__item nomargin"><button type="button" class="gallery-btn__filter">Дизайн</button></li>
+          <li class="gallery-btn__item"><button type="button" class="gallery-btn__filter">Маркетинг</button></li>
+     </ul>
+          <ul class="gallery-card__list list">
+               <li class="gallery-card__item">
+                    <a href="#" class="gallery-card__link">
+                         <div class="gallery-card__thumb">
+                              <picture>
+                                   <source srcset="./images/laptop.jpg 1x,
+                                   ./images/laptop2x.jpg 2x"
+                                   media="(min-width:1200px)">
+                                   <source srcset="./images/laptop-tab.jpg 1x,
+                                   ./images/laptop-tab2x.jpg 2x"
+                                   media="(min-width:768px)">
+                                   <source srcset="./images/laptop-mob.jpg 1x,
+                                   ./images/laptop-mob2x.jpg 2x"
+                                   media="(max-width:767px)">
+                                   <img srcset="./images/laptop.jpg 1x,
+                                   ./images/laptop2x.jpg 2x"
+                                   src="./images/laptop.jpg" 
+                                   alt="Веб-сайт">
+                              </picture>
+                              
+                         <p class="gallery-card__picture--text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                               Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                         </p>
+                         </div>
+                         <div class="gallery-card__container">
+                          <h2 class="gallery-card__title">Технокряк</h2>
+                          <p class="gallery-card__paragraph">Веб-сайт</p>
+                         </div>
+                        </a>
+               </li>
+               <li class="gallery-card__item">
+                    <a href="#" class="gallery-card__link">
+                        <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/basketball.jpg 1x,
+                               ./images/basketball2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/basketball-tab.jpg 1x,
+                               ./images/basketball-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/basketball-mob.jpg 1x,
+                               ./images/basketball-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/basketball.jpg 1x,
+                               ./images/basketball2x.jpg 2x"  
+                               src="./images/basketball.jpg" alt="Баскетбол">
+                         </picture>
+                        
+                         <p class="gallery-card__picture--text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                               Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                         </p>
+                        </div>
+                   <div class="gallery-card__container">
+                    <h2 class="gallery-card__title">Постер New Orlean vs Golden Star</h2>
+                    <p class="gallery-card__paragraph">Дизайн</p>
+                   </div>
+                    </a>
+               </li>
+               <li class="gallery-card__item">
+                   <a href="#" class="gallery-card__link">
+                    <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/seafood.jpg 1x,
+                               ./images/seafood2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/seafood-tab.jpg 1x,
+                               ./images/seafood-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/seafood-mob.jpg 1x,
+                               ./images/seafood-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/seafood.jpg 1x,
+                               ./images/seafood2x.jpg 2x" 
+                               src="./images/seafood.jpg" 
+                               alt="ЛоготипРесторану">
+                         </picture>
+                    <p class="gallery-card__picture--text">
+                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                          Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                    </div>
+                    <div class="gallery-card__container">
+                     <h2 class="gallery-card__title">Ресторан Seafood</h2>
+                     <p class="gallery-card__paragraph">Додаток</p>
+                    </div>
+                   </a>
+               </li>
+               <li class="gallery-card__item">
+                   <a href="#" class="gallery-card__link">
+                    <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/headphone.jpg 1x,
+                               ./images/headphone2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/headphone-tab.jpg 1x,
+                               ./images/headphone-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/headphone-mob.jpg 1x,
+                               ./images/headphone-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/headphone.jpg 1x,
+                               ./images/headphone2x.jpg 2x" 
+                               src="./images/headphone.jpg" 
+                               alt="МузичнийПроєкт">
+                         </picture>
+                    <p class="gallery-card__picture--text">
+                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                          Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                    </div>
+                    <div class="gallery-card__container">
+                         <h2 class="gallery-card__title">Проєкт Prime</h2>
+                         <p class="gallery-card__paragraph">Маркетинг</p>
+                    </div>
+                   </a>
+               </li>
+               <li class="gallery-card__item">
+                    <a href="#" class="gallery-card__link">
+                         <div class="gallery-card__thumb">
+                              <picture>
+                                   <source srcset="./images/boxes.jpg 1x,
+                                    ./images/boxes2x.jpg 2x" 
+                                    media="(min-width:1200px)">
+                                   <source srcset="./images/boxes-tab.jpg 1x,
+                                    ./images/boxes-tab2x.jpg 2x" 
+                                    media="(min-width:768px)">
+                                   <source srcset="./images/boxes-mob.jpg 1x,
+                                    ./images/boxes-mob2x.jpg 2x" 
+                                    media="(max-width:767px)">
+                                   <img srcset="./images/boxes.jpg 1x,
+                                    ./images/boxes2x.jpg 2x"  
+                                    src="./images/boxes.jpg" 
+                                    alt="ПоштовіБокси">
+                              </picture>                        
+                         <p class="gallery-card__picture--text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                               Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                         </p>
+                         </div>
+                    <div class="gallery-card__container">
+                         <h2 class="gallery-card__title">Проєкт Boxes</h2>
+                         <p class="gallery-card__paragraph">Додаток</p>
+                    </div>
+                    </a>
+               </li>
+               <li class="gallery-card__item">
+                    <a href="#" class="gallery-card__link">
+                        <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/pc.jpg 1x,
+                               ./images/pc2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/pc-tab.jpg 1x,
+                               ./images/pc-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/pc-mob.jpg 1x,
+                               ./images/pc-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/pc.jpg 1x,
+                               ./images/pc2x.jpg 2x"  
+                               src="./images/pc.jpg" 
+                               alt="ВебСайт">
+                         </picture>
+                         <p class="gallery-card__picture--text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                               Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                         </p>
+                        </div>
+                   <div class="gallery-card__container">
+                    <h2 class="gallery-card__title">Inspiration has no Borders</h2>
+                    <p class="gallery-card__paragraph">Веб-сайт</p>
+                   </div>
+                    </a>
+               </li>
+               <li class="gallery-card__item">
+                    <a href="#" class="gallery-card__link">
+                        <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/magazine.jpg 1x,
+                               ./images/magazine2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/magazine-tab.jpg 1x,
+                               ./images/magazine-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/magazine-mob.jpg 1x,
+                               ./images/magazine-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/magazine.jpg 1x,
+                               ./images/magazine2x.jpg 2x" 
+                               src="./images/magazine.jpg" 
+                               alt="ЖурналВидання">
+                         </picture>                    
+                         <p class="gallery-card__picture--text">
+                              Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                               Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                         </p>
+                        </div>
+                    <div class="gallery-card__container">
+                         <h2 class="gallery-card__title">Видання Limited Edition</h2>
+                         <p class="gallery-card__paragraph">Дизайн</p>
+                    </div>
+                    </a>
+               </li>
+               <li class="gallery-card__item">
+                  <a href="#" class="gallery-card__link">
+                    <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/lab.jpg 1x,
+                               ./images/lab2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/lab-tab.jpg 1x,
+                               ./images/lab-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/lab-mob.jpg 1x,
+                               ./images/lab-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/lab.jpg 1x,
+                               ./images/lab2x.jpg 2x" 
+                               src="./images/lab.jpg" 
+                               alt="Маркетинг">
+                         </picture>                
+                    <p class="gallery-card__picture--text">
+                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                          Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                    </div>
+                    <div class="gallery-card__container">
+                     <h2 class="gallery-card__title">Проєкт LAB</h2>
+                     <p class="gallery-card__paragraph">Маркетинг</p>
+                    </div>
+                  </a>
+               </li>
+               <li class="gallery-card__item">
+                   <a href="#" class="gallery-card__link">
+                    <div class="gallery-card__thumb">
+                         <picture>
+                              <source srcset="./images/growing-business.jpg 1x,
+                               ./images/growing-business2x.jpg 2x" 
+                               media="(min-width:1200px)">
+                              <source srcset="./images/growing-business-tab.jpg 1x,
+                               ./images/growing-business-tab2x.jpg 2x" 
+                               media="(min-width:768px)">
+                              <source srcset="./images/growing-business-mob.jpg 1x,
+                               ./images/growing-business-mob2x.jpg 2x" 
+                               media="(max-width:767px)">
+                              <img srcset="./images/growing-business.jpg 1x,
+                               ./images/growing-business2x.jpg 2x" 
+                               src="./images/growing-business.jpg" 
+                               alt="ФотоСайт">
+                         
+                    <p class="gallery-card__picture--text">
+                         Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                          Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
+                    </div>
+                    <div class="gallery-card__container">
+                         <h2 class="gallery-card__title">Growing Business</h2>
+                         <p class="gallery-card__paragraph">Веб-сайт</p>
+                    </div>
+                   </a>
+               </li>
+          </ul>
+     </div>
+</section>
+     </main>
+     <!-- Підвал -->
+<footer class="page-footer">
+     <div class="container page-footer__container--flex">
+          <div class="page-footer__container">
+               <a href="./index.html" class="page-footer__logo logo__adaptive"><span class="logo__accent--color">Web</span>Studio</a>
+               <address class="page-footer__address">
+                    <ul class="address__list list">
+                         <li><a class="address__link link" target="_blank" rel="noopener noreferer"
+                                   href="https://www.google.com/maps/place/вулиця Лесі Українки/26b/Київ/Україна">м.
+                                   Київ, пр-т Лесі
+                                   Українки, 26b</a></li>
+                         <li><a href="mailto:info@devstudio.com" class="address__link link">info@devstudio.com</a></li>
+                         <li><a href="tel:+380961111111" class="address__link link">+38 096 111 11 11</a></li>
+                    </ul>
+               </address>
+          </div>
+          <div class="page-footer__social">
+               <p class="page-footer__social--title">ПРИЄДНУЙТЕСЬ</p>
+               <ul class="social-list list">
+                    <li class="social-list__item"><a href="#" class="social-list__link">
+                              <svg class="social-list__icon">
+                                   <use href="./images/icons.svg#instagram"></use>
+                              </svg>
+                         </a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link">
+                              <svg class="social-list__icon">
+                                   <use href="./images/icons.svg#twitter"></use>
+                              </svg>
+                         </a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link">
+                              <svg class="social-list__icon">
+                                   <use href="./images/icons.svg#facebook"></use>
+                              </svg>
+                         </a></li>
+                    <li class="social-list__item"><a href="#" class="social-list__link">
+                              <svg class="social-list__icon">
+                                   <use href="./images/icons.svg#linkedin"></use>
+                              </svg>
+                         </a></li>
+               </ul>
+          </div>
+          <form class="subscribe-form">
+               <b class="subscribe-form__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
+               <div class="subscribe-form__field">
+                    <input type="email" name="email" class="subscribe-form__input" placeholder="E-mail">
+                    <button type="sumbit" class="subscribe-form__button">Підписатися
+                         <svg class="subscribe-form__icon--send">
+                              <use href="./images/icons.svg#icon-send"></use>
+                         </svg>
+                    </button>
+               </div>
+          </form>
+     </div>
+</footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
